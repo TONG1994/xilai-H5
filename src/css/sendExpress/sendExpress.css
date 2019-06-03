@@ -1,0 +1,484 @@
+body {
+    background: #F7F7F7;
+}
+
+.expressBox {
+    display: flex;
+    background: #ffffff;
+    margin-bottom: 22px;
+}
+
+.dots {
+    margin: 60px 20px 0 0;
+}
+
+.dots .dot {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dots .red {
+    margin: 5px 0 0 0;
+    background-image: url("../../../images/reddot.png")
+}
+
+.dots .blue {
+    background-image: url("../../../images/bluedot.png")
+}
+
+.dots .line {
+    height: 140px;
+    width: 6px;
+    margin-left: 8px;
+    background: #E9E9E9;
+}
+
+.expressMesslist {
+    padding: 28px 42px;
+    width: 100%;
+}
+
+.expressMesslist .icon-jiantou {
+    width: 50px;
+    text-align: right;
+    font-size: 38px;
+    color: #C6C6C6;
+}
+
+.expressMesslist li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expressMesslist li:first-child {
+    padding: 0 0 34px 0;
+}
+
+.expressMesslist li .sendtitle {
+    color: #F90D0D;
+    font-size: 32px;
+}
+
+.expressMesslist li .gettitle {
+    color: #0B7BFF;
+    font-size: 32px;
+}
+
+.expressMesslist li .dashline {
+    margin: 0 14px;
+    width: 1px;
+    height: 88px;
+}
+
+.expressMesslist li .messages {
+    flex: 1;
+}
+
+.expressMesslist li .messages .mess {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #121212;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+}
+.expressMesslist li .messages .mess .name{
+    max-width: 58%;
+}
+.expressMesslist li .messages .mess div{
+    word-break: break-all;
+}
+.messages .mess .name {
+    color: #898989;
+}
+
+.expressMesslist li .messages p {
+    color: #898989;
+    font-size: 28px;
+    width: 100%;
+    line-height: 40px;
+    word-break: break-all;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.agreement {
+    line-height: 40px;
+    font-size: 28px;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+.agreement i {
+    font-size: 60px;
+    color: #DEDEDE;
+    position: relative;
+    /*z-index: 100;*/
+    top: 5px;
+}
+
+.agreement i.icon-fangkuangxuanze {
+    color: #e83f57;
+}
+
+.agreement .baibg {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    z-index: 1;
+}
+
+.agreement a {
+    color: #4A90E2;
+}
+
+.agreement button {
+    width: 600px;
+    height: 88px;
+    line-height: 88px;
+    margin: 22px 0 0 0;
+    font-size: 28px;
+    border: none;
+    border-radius: 50px;
+    background-color: #9B9B9B;
+    color: #ffffff;
+
+}
+
+.agreement button.active {
+    background: #E83F57;
+    box-shadow: -1px 2px 15px #280909;
+}
+
+.select-wrap {
+    width: 100%;
+    padding: 28px 42px 0 42px;
+    margin-bottom: 100px;
+    background-color: #FFFFFF;
+    font-size: 28px;
+}
+
+.select-wrap > div {
+    display: flex;
+    align-items: center;
+    height: 82px;
+    line-height: 82px;
+}
+
+.pc-box span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.select-wrap label {
+
+}
+
+.select-wrap .pc-box {
+    flex: 1;
+    height: 100%;
+}
+
+.select-wrap .pc-box span {
+    text-align: right;
+    padding-right: 40px;
+    color: #989898;
+}
+
+.ios-select-widget-box header.iosselect-header {
+    display: block;
+}
+
+/*弹出层*/
+.popup-wrap {
+    position: relative;
+    z-index: 9999;
+}
+
+.popup-cover {
+    background-color: rgba(0, 0, 0, .75);
+    pointer-events: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup-covers {
+    background-color: rgba(0, 0, 0, .75);
+    pointer-events: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-main {
+    display: table;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, arial, sans-serif;
+    pointer-events: none;
+}
+
+.popup-section {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.popup-section .popup-child {
+    position: fixed;
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 0 0;
+}
+
+.popup-child {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    pointer-events: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+
+.popup-btn {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0;
+    border-top: 1px solid #D0D0D0;
+    background-color: #F2F2F2;
+}
+
+.select-header {
+    height: 88px;
+    line-height: 88px;
+    background-color: #eee;
+    width: 100%;
+    z-index: 9999;
+    text-align: center;
+}
+
+.select-header .close {
+    float: left;
+    padding-left: 30px;
+    height: 88px;
+    line-height: 88px;
+}
+
+.select-header a {
+    font-size: 32px;
+    color: #e94643;
+    text-decoration: none;
+}
+
+.select-header .sure {
+    float: right;
+    padding-right: 30px;
+    height: 88px;
+    line-height: 88px;
+}
+
+.select-header #iosSelectTitle {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: normal;
+    color: #333;
+}
+
+header.select-header {
+    display: block;
+}
+
+.date-show {
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+.data-show-day {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.data-show-day > div {
+    padding: 20px 0;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #9b9b9b;
+    border-radius: 6px;
+}
+
+.data-show-day > div span {
+    display: block;
+    width: 100%;
+}
+
+.data-show-time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.data-show-time > button {
+    display: block;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #9b9b9b;
+    border-radius: 6px;
+}
+
+.data-show-day > div.active {
+    border: 1px solid #0b7bff;
+}
+
+.data-show-time > button.active {
+    background-color: #0b7bff;
+    border: 1px solid #0b7bff;
+    color: #fff;
+}
+
+.data-show-time > button.banned {
+    background-color: #fff;
+    border: 1px solid #9e9e9e;
+    color: #9b9b9b;
+}
+.select-wrap .border-1px-bottom:after {
+    /*background: #F1F1F1;*/
+}
+.select-wrap .icon-jiantou {
+    width: 50px;
+    text-align: right;
+    font-size: 38px;
+    color: #C6C6C6;
+}
+.gettitle img,.sendtitle img{
+    display: block;
+    width: 52px;
+}
+
+.content-wrap.border-1px-bottom:after {
+    background: #E9E9E9;
+
+}
+.station-content {
+    background-color: white;
+}
+.popup-wraps{
+    z-index: 2;
+}
+
+.content-wrap {
+    padding: 30px 40px 20px 42px;
+}
+
+.fang {
+    margin-top: 20px;
+}
+.adr-wrap > div {
+    color: #121212;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.adr-name {
+    font-size: 38px;
+    margin-left: 100px;
+}
+
+.adr-phone {
+    font-size: 28px;
+    color: #898989;
+    float: right;
+    margin-top: -30px;
+}
+
+.adr-detail {
+    font-size: 28px;
+    color: #898989;
+    line-height: 50px;
+    margin-left: 100px;
+}
+.adr-area {
+    font-size: 28px;
+    color: #898989;
+    line-height: 50px;
+    margin-left: 100px;
+}
+.fang {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /*top: 34px;*/
+    /*left: 60px;*/
+    background-image: url("../../../images/fang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*选择物品类型*/
+.select-type{
+    position: relative;
+    z-index: 9999;
+}
+.type-btn{
+    padding: 20px 0;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #9b9b9b;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.type-btn span {
+    display: block;
+    width: 100%;
+}
+.date-show{
+    /*position: relative;*/
+}
+#typeValue{
+    border:none;
+    border-bottom: 1px solid #9E9E9E;
+    line-height: 60px;
+    font-size: 30px;
+    width: 97%;
+    margin-left: 1%;
+}
+.data-show-day div.active {
+    background-color: #0b7bff;
+    border: 1px solid #0b7bff;
+    color: #fff;
+}

@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+}
+
+.buttonapprove {
+    width: 100%;
+    height: 112px;
+    position: absolute;
+    top: 20px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+}
+.realnametext {
+    position: absolute;
+    top: 36px;
+    left: 38px;
+    color: #898989;
+    font-size: 32px;
+}
+.approvetext {
+    position: absolute;
+    top: 36px;
+    right: 98px;
+    color: #121212;
+    font-size: 32px;
+}
+.icon-jiantou.arrowdiv{
+    position: absolute;
+    top: 37px;
+    right: 40px;
+    color: #C6C6C6;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.footdiv {
+    position: absolute;
+    bottom: 140px;
+    height: auto;
+    width: 100%;
+}
+.buttondiv {
+    border-radius: 60px;
+    margin: auto 86px;
+    width: 600px;
+    height: 88px;
+    background-color: #E83F57;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 32px;
+}

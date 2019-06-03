@@ -1,0 +1,62 @@
+html, body {
+    background: #F7F7F7;
+}
+.wrap {
+    position: relative;
+}
+
+.logo {
+    padding: 52px 0 58px 0;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 26px;
+}
+
+.logo > .img {
+    display: inline-block;
+    padding: 20px;
+    background: #F7F7F7;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+.logo > div h3{
+    font-size: 32px;
+    color: #121212;
+}
+.logo > div img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.versions,.rule{
+    padding-left: 38px;
+    background: #ffffff;
+}
+.versions>div,.rule>div{
+    padding: 30px 58px 30px 0;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.versions>div>span,.rule>div>span{
+    display: block;
+}
+.versions>div{
+    border-bottom: 1px solid #E9E9E9;
+}
+.versions .icon-jiantou,.rule .icon-jiantou{
+    font-size: 42px;
+    color: #C6C6C6;
+}
+.new{
+    display: flex;
+    align-items: center;
+}
+.new .new-logo{
+    color: #ffffff;
+    background-color: #E60012;
+    padding: 2px 18px;
+    border-radius: 18px;
+    font-size: 27px;
+}

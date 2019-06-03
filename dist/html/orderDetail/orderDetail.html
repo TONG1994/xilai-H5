@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>订单详情</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/common/index-ea101ea8e8.css">
+    <link rel="stylesheet" href="../../css/orderDetail/orderDetail-464289e23b.css">
+    <link rel="stylesheet" href="../../lib/layer_mobile/need/layer.css">
+
+
+</head>
+<body>
+    <div class="ordertitle">
+        <div class="state" id="stateText"></div>
+    </div>
+    <div class="expressMess">
+        <div class="companyImg"><img src="../../images/kuaidi.png"/></div>
+        <div>
+            <p>物流公司:  <span class="company" id="companyName"></span></p>
+            <p>物流单号:  <span class="company" id="companyId"></span></p>
+        </div>
+        <div class="mycopy">
+            <img src="../../images/mycopy.png" onclick="copy()" />
+        </div>
+    </div>
+    <div class="list-btn border-1px-bottom" id="listBtn">
+        <ul>
+            <li>
+                运单详情
+            </li>
+            <li>
+                物流详情
+            </li>
+        </ul>
+        <div class="btn-line">
+            <div class="btn-active">
+            </div>
+        </div>
+    </div>
+    <div id="logisticsContent">
+        <ul class="sheetDetail">
+            <li>
+                <div class="sheetCity">
+                    <div class="start" id="sentCity"></div>
+                    <div class="cityArrow"></div>
+                    <div class="destination" id="receiveCity"></div>
+                </div>
+            </li>
+            <li>
+                <p>喜来单号:  <span class="sheetNo"></span></p>
+            </li>
+            <li>
+                <p>寄件方:</p>
+                <div class="customer">
+                    <p>
+                        <span id="senderName"></span><span id="senderTel">12899321034</span>
+                    </p>
+                    <p id="senderAddress"></p>
+                </div>
+            </li>
+            <li>
+                <p>收件方:</p>
+                <div class="customer">
+                    <p>
+                        <span id="receiverName"></span><span id="receiverTel">12899321034</span>
+                    </p>
+                    <p id="receiverAddress"></p>
+                </div>
+            </li>
+            <li class="table">
+                <div>物品类型: <span id="tableGoods"></span></div>
+                <div class="ml-24">运输方式: <span id="tableType"></span></div>
+                <div class="line"></div>
+            </li>
+            <li class="table">
+                <div>物品重量: <span id="tableWeight"></span></div>
+                <div class="ml-24">付款方式: <span id="payMethod">支付宝</span></div>
+                <div class="line"></div>
+            </li>
+            <li class="cost">
+                <span>运费: </span><span id="moneyAll"></span>
+                <span>优惠: </span><span id="moneyDiscount"></span>
+                <span>实付: </span><span id="moneyActual"></span>
+            </li>
+            <li>
+                <p>收件员:  <span class="staffName"></span><span class="staffNo">2335</span></p>
+            </li>
+            <li>
+                <p>收件时间:  <span class="sheettime"></span></p>
+            </li>
+            <li>
+                <p>订单号:  <span class="orderNo"></span></p>
+            </li>
+            <li class="cancel-li" style="display: none"> <div class="cancel" id="cancelBtn">取消订单</div></li>
+        </ul>
+        <ul class="logisticsDetail" style="display: none">
+
+        </ul>
+    </div>
+
+    <div class="popup-wrap" style="display: none;">
+        <div class="popup-cover"></div>
+        <div class="popup-main">
+            <div class="popup-section">
+                <div class="popup-child layui-m-anim-up">
+                    <div class="popup-m-cont">请选择取消原因</div>
+                    <div class="popup-btn">
+                        <span id="popup-btn-no">不想发了</span>
+                        <span class="btn-end" id="popup-btn-other">其他原因</span>
+                        <span class="popup-cancel">取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/orderDetail/orderDetail.js"></script>
+<script src="../../js/common/api.js"></script>
+<script src="../../lib/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+mtac()
+</script>
+</body>
+</html>

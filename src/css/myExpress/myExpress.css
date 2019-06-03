@@ -1,0 +1,151 @@
+body{
+    background:#F2F2F2;
+}
+
+/* tab切换 */
+.list-btn {
+    width: 100%;
+    height: 72px;
+    font-size: 0;
+    background: #fff;
+}
+
+.list-btn ul li {
+    display: inline-block;
+    width: 33.3%;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 32px;
+    color: #121212;
+}
+.list-btn ul li.active {
+    border-bottom: 2px solid #F24A16;
+    transition: all 0.5s ease-out;
+}
+
+/*滑动效果*/
+.btn-line {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+}
+.btn-line .btn-active {
+    width: 33.3%;
+    height: 2px;
+    background: #F24A16;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-out;
+}
+/* 快递list */
+.myExpresslist li{
+    margin-top: 20px;
+    position: relative;
+    background: #ffffff;
+}
+.myExpresslist .fromto{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    border-bottom: 2px dashed #E9E9E9;
+    padding:38px 0;
+}
+.myExpresslist .fromto>div{
+    width: 33.33%;
+}
+.expressNo{
+    display: flex;
+    align-items: center;
+}
+.expressNo .orderN{
+    width:70%;
+}
+.expressNo .orderstate{
+    width: 30%;
+    text-align: right;
+    color: #E33253;
+}
+.myExpresslist .expressNo{
+    padding:0 30px;
+    color:#9B9B9B;
+    font-size: 28px;
+    height: 66px;
+    line-height: 66px;
+    border: 1px solid #EEEEEE;
+}
+.myExpresslist .expressNo i{
+    margin-right: 8px;
+}
+.myExpresslist .expressNo span{
+    margin-right: 15px;
+}
+
+.myExpresslist .from,.to{
+    margin:0 10px 0 19px;
+}
+.myExpresslist .from>p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.expressState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height:40px;
+}
+.expressState .line{
+    width: 30%;
+    height: 4px;
+    border:2px dashed #BCBCBC;
+}
+.expressState .icon{
+    width: 64px;
+    margin: 0 20px;
+}
+.expressState .icon img{
+    display: block;
+    width: 100%;
+}
+.expressState span{
+    line-height: 40px;
+    font-size:28px;
+    color: #171717;
+}
+.fromto .place{
+    color: #000000;
+    font-size: 38px;
+    font-weight: 500;
+}
+.fromto .name{
+    color: #9B9B9B;
+    font-size: 28px;
+    margin:6px 0 0 0;
+}
+.orderTime{
+    padding:16px 0 14px 0;
+    color: #9B9B9B;
+    font-size: 24px;
+    text-align: center;
+}
+
+#sendNone {
+    background-color: #F2F2F2;
+    padding-top: 150px;
+}
+
+#sendNone img {
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+}
+
+#sendNone p {
+    padding-top: 34px;
+    font-size: 24px;
+    color: #797979;
+    text-align: center;
+}

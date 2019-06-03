@@ -1,0 +1,163 @@
+body {
+    background: #F7F7F7;
+}
+
+.coupon-wrap {
+    padding: 24px 32px;
+}
+
+.coupon ul li {
+    margin-bottom: 20px;
+}
+
+.coupon-li-wrap {
+    width: 100%;
+    background: #fff;
+}
+
+.li-wrap-top, .li-wrap-bottom {
+    position: relative;
+    padding: 0 32px;
+}
+
+.coupon-li-wrap-top {
+    position: relative;
+    padding: 28px 0 10px 0;
+    border-bottom: 1px dashed #DFDFDF;
+    color: #000;
+}
+
+.wrap-top-price {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.wrap-top-price > div {
+    width: 50%;
+    line-height: 1;
+}
+
+.top-price-tit {
+    position: relative;
+    font-size: 36px;
+}
+
+.top-price-tit p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.top-price-num {
+    text-align: right;
+    color: #E83F57;
+}
+
+.top-price-num .symbol {
+    font-size: 40px;
+}
+
+.top-price-num .num {
+    font-size: 62px;
+}
+
+.wrap-top-date {
+    display: flex;
+}
+
+.wrap-top-date > div {
+    width: 50%;
+    font-size: 24px;
+    color: #5F5F5F;
+}
+
+.top-data-txt {
+    text-align: right;
+}
+
+/*凹角*/
+.bottom-left-corner, .bottom-right-corner, .top-left-corner, .top-right-corner {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #F7F7F7;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.bottom-left-corner {
+    border-top-right-radius: 100%;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 0 1px #d3d3d3;
+}
+
+.bottom-right-corner {
+    border-top-left-radius: 100%;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 1px #d3d3d3;
+}
+
+.top-left-corner {
+    border-bottom-right-radius: 100%;
+    left: 0;
+    top: 0;
+}
+
+.top-right-corner {
+    border-bottom-left-radius: 100%;
+    right: 0;
+    top: 0;
+}
+
+.coupon-li-wrap-bottom {
+    padding: 8px 0 14px 0;
+}
+
+.coupon-li-wrap-bottom p {
+    font-size: 20px;
+    color: #8B8B8B;
+}
+
+.li-wrap-bottom {
+    border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+}
+
+.coupon-li-wrap.used .top-price-tit p, .coupon-li-wrap.used .wrap-top-date > div,
+.coupon-li-wrap.used .wrap-top-price > div {
+    color: #8B8B8B !important;
+}
+
+.used-icon {
+    position: absolute;
+    right: 42px;
+    bottom: 10px;
+}
+
+.used-icon img {
+    display: block;
+    width: 76px;
+}
+
+.coupon-li-wrap.used .used-icon {
+    display: block !important;
+}
+
+#quanNone {
+    background-color: #F7F7F7;
+    padding-top: 150px;
+}
+
+#quanNone img {
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+}
+
+#quanNone p {
+    padding-top: 34px;
+    font-size: 24px;
+    color: #797979;
+    text-align: center;
+}

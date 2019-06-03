@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>订单详情</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/common/index-ea101ea8e8.css">
+    <link rel="stylesheet" href="../../css/expressDetail/expressDetail-0452e1d28e.css">
+    <link rel="stylesheet" href="../../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="ordertitle">
+    <div class="state" id="orderState"></div>
+</div>
+<div class="courier-wrap" style="display: none">
+    <div class="courier-icon"><img src="" onerror="this.src='../../images/kuaidiyuan.png'" alt=""></div>
+    <div class="courier-detail">
+        <div><span id="courierName"></span><span id="courierServe"></span></div>
+        <div id="courierAddress"></div>
+    </div>
+    <div class="courier-phone">
+        <a href="" id="courierPhone">
+            <img src="../../images/phone-icon.png" alt="">
+        </a>
+    </div>
+</div>
+<div class="orderDetail">
+    <ul>
+        <li class="border-1px-bottom">
+            <div class="sendtitle">
+                <img src="../../images/send.png" alt="">
+            </div>
+            <div class="dashline"></div>
+            <div class="messages">
+                <div class="mess">
+                    <div class="name" id="sentAddressName"></div>
+                    <div class="telephone" id="sentAddressPhone"></div>
+                </div>
+                <p id="sentAddressDetail"></p>
+            </div>
+        </li>
+        <li>
+            <div class="gettitle"><img src="../../images/receive.png" alt=""></div>
+            <div class="dashline"></div>
+            <div class="messages">
+                <div class="mess">
+                    <div class="name" id="receiveAddressName"></div>
+                    <div class="telephone" id="receiveAddressPhone"></div>
+                </div>
+                <p id="receiveAddressDetail"></p>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="orderDetailText-wrap">
+    <div>
+        <ul class="border-1px-bottom">
+            <li>
+                <div class="orderDetailText">
+                    <div class="name orderText">订 单 号</div>
+                    ：<div class="text" id="orderNub"></div>
+                </div>
+            </li>
+            <li>
+                <div class="orderDetailText">
+                    <div class="name">物品类型：</div>
+                    <div class="text" id="goodType"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="orderDetailText">
+                    <div class="name">物品重量：</div>
+                    <div class="text" id="goodWeight"></div>
+                </div>
+            </li>
+            <li>
+                <div class="orderDetailText  marB-20">
+                    <div class="name">预约时间：</div>
+                    <div class="text" id="subscribeTime"></div>
+                </div>
+            </li>
+            <li>
+                <div class="orderDetailText">
+                    <div class="name orderText">服 务 站</div>
+                    ：<div class="text" id="orgName"></div>
+                </div>
+            </li>
+            <li>
+                <div class="orderDetailText">
+                    <div class="name">详细地址：</div>
+                    <div class="text" id="detailAddress"></div>
+                </div>
+            </li>
+            <li>
+                <div class="orderDetailText">
+                    <div class="name">联系方式：</div>
+                    <div class="text" id="headTelephone"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="quBtn">
+        <div class="button" id="cancelBtn" style="display: none">取消订单</div>
+    </div>
+</div>
+
+<div class="popup-wrap" style="display: none;">
+    <div class="popup-cover"></div>
+    <div class="popup-main">
+        <div class="popup-section">
+            <div class="popup-child layui-m-anim-up">
+                <div class="popup-m-cont">请选择取消原因</div>
+                <div class="popup-btn">
+                    <span id="popup-btn-no">不想发了</span>
+                    <span class="btn-end" id="popup-btn-other">其他原因</span>
+                    <span class="popup-cancel">取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/common/api.js"></script>
+<script src="../../js/expressDetail/expressDetail.js"></script>
+<script src="../../lib/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+    mtac()
+</script>
+</body>
+</html>

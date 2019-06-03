@@ -1,0 +1,271 @@
+html, body, .wrap {
+    background: #F7F7F7;
+}
+
+.wrap {
+    position: relative;
+}
+.wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.search-wrap {
+    display: flex;
+    padding: 18px 0 26px 42px;
+}
+
+.search-ipt {
+    display: flex;
+    position: relative;
+    width: 560px;
+    border-radius: 36px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+}
+
+.search-ipt .ipt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+    margin-left: 30px;
+}
+
+.search-ipt .ipt-icon i {
+    display: inline-block;
+    font-size: 45px;
+    color: #9E9E9E;
+}
+
+.form1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ipt-wrap {
+    height: 72px;
+    line-height: 72px;
+    width: 100%;
+}
+
+.ipt-wrap input {
+    display: inline-block;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+}
+
+.address-manage {
+    flex: 1;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    font-size: 32px;
+}
+
+.list-btn {
+    width: 100%;
+    height: 72px;
+    font-size: 0;
+    background: #fff;
+}
+
+.list-btn ul li {
+    display: inline-block;
+    width: 33.3%;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 32px;
+    color: #121212;
+}
+
+.list-btn.border-1px-bottom:after {
+    background: #E9E9E9;
+}
+
+.list-btn ul li.active {
+    border-bottom: 2px solid #F24A16;
+    transition: all 0.5s ease-out;
+}
+
+/*滑动效果*/
+.btn-line {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+}
+
+.address-content ul {
+    padding-bottom: 150px;
+}
+
+.address-content li {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.btn-line .btn-active {
+    width: 33.3%;
+    height: 2px;
+    background: #F24A16;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-out;
+}
+
+.content-wrap.border-1px-bottom:after {
+    background: #E9E9E9;
+}
+
+.content-wrap {
+    padding: 30px 40px 20px 42px;
+}
+
+.adr-wrap {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.adr-wrap > div {
+    width: 50%;
+    color: #121212;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.adr-name {
+    font-size: 36px;
+}
+
+.adr-phone {
+    font-size: 32px;
+    text-align: right;
+}
+
+.adr-detail {
+    font-size: 28px;
+    color: #898989;
+    line-height: 40px;
+}
+
+.adr-edit {
+    position: relative;
+    display: flex;
+    height: 78px;
+    line-height: 78px;
+    padding: 0 40px 0 42px;
+}
+
+.default-btn {
+    width: 336px;
+    font-size: 28px;
+    color: #898989;
+}
+
+.edit-btn, .detail-btn {
+    position: absolute;
+    top: 0;
+    display: flex;
+    font-size: 28px;
+    color: #898989;
+    height: 78px;
+    line-height: 78px;
+}
+
+.edit-btn .iconfont, .detail-btn .iconfont {
+    display: block;
+    font-size: 40px;
+    margin-right: 16px;
+}
+
+.edit-btn {
+    right: 206px;
+}
+
+.detail-btn {
+    right: 42px;
+}
+
+.new-add-address {
+    position: fixed;
+    left: 0;
+    bottom: 58px;
+    width: 100%;
+    z-index: 999;
+}
+
+.new-add-address button {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 88px;
+    line-height: 88px;
+    border: none;
+    border-radius: 60px;
+    background-color: #E83F57;
+    font-size: 32px;
+    color: #fff;
+    box-shadow: -1px 2px 15px #280909;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.pop-up-box-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.pop-up-box {
+    margin: 0 auto;
+    width: 400px;
+    background: #ffffff;
+}
+
+.pop-up-box .pop-tit {
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+.pop-btn {
+    display: flex;
+}
+
+.pop-btn > div {
+    width: 50%;
+    height: 100px;
+    line-height: 90px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#addressListNone {
+    padding-top: 110px;
+    background-color: #F7F7F7;
+}
+
+#addressListNone img {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+}
+
+#addressListNone p {
+    font-size: 24px;
+    color: #767676;
+    text-align: center;
+}

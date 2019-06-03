@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/realname/realname-f9cf70b4a9.css">
+    <link rel="stylesheet" href="../../css/common/index-ea101ea8e8.css">
+</head>
+<body>
+<div class="box">
+    <div class="titletext">
+        根据国家最新规定，寄收快递须实名登记
+    </div>
+
+    <div class="inputdiv">
+        <div class="nameinputdiv">
+            <div class="namediv">
+                姓名
+            </div>
+            <input class="inputname" placeholder="请输入姓名" type="text"/>
+        </div>
+        <div class="hrdiv"></div>
+        <div class="idinputdiv">
+            <div class="iddiv">
+                身份证号
+            </div>
+            <input class="inputid" type="text" maxlength="18" placeholder="请输入身份证号"/>
+        </div>
+    </div>
+
+    <div class="inputerror" style="display: none">
+        用户名与身份证号不一致
+    </div>
+
+    <div class="footdiv">
+        <div class="foottext" id="ftext" style="display: none">
+            喜来快递承诺不将你的个人信息透露给任何第三方
+        </div>
+        <div class="buttondiv disbutton">
+            <button disabled="disabled">
+                验证
+            </button>
+        </div>
+    </div>
+
+    <div class="re" style="display: none">
+        <div class="rebackground">
+            <div class="reright" style="display: none">
+                <div class="icon-succeed iconfont"></div>
+                <div id="righttext">验证成功</div>
+            </div>
+            <div class="reerror" style="display: none">
+                <div class="icon-fail iconfont"></div>
+                <div id="errortext">验证失败</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/common/common.js"></script>
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../js/realname/realname.js"></script>
+<script src="../../js/common/api.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+mtac()
+</script>
+</body>
+</html>

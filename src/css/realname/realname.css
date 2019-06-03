@@ -1,0 +1,178 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+}
+
+.titletext {
+    font-size: 28px;
+    padding: 14px 30px;
+    width: auto;
+    color: #4A4A4A;
+}
+
+.inputdiv {
+    width: 100%;
+    top: 62px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.nameinputdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.namediv {
+    margin-top: 32px;
+    margin-left: 48px;
+    font-size: 32px;
+    color: #000000;
+    letter-spacing: 2em;
+    line-height: 44px;
+}
+
+.inputname {
+    margin-top: 32px;
+    border: none;
+    font-size: 32px;
+    color: #121212;
+    width: auto;
+    flex: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #D0D0D0;
+}
+
+.hrdiv {
+    margin-left: 38px;
+    margin-top: 26px;
+    width: 712px;
+    height: 2px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.idinputdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.iddiv {
+    margin-left: 48px;
+    margin-top: 26px;
+    font-size: 32px;
+    color: #000000;
+    line-height: 44px;
+    margin-right: 2em;
+    margin-bottom: 34px;
+}
+
+.inputid {
+    border: none;
+    margin-top: 26px;
+    font-size: 32px;
+    color: #121212;
+    width: auto;
+    margin-bottom: 34px;
+}
+
+.inputerror{
+    position: absolute;
+    top: 280px;
+    right: 15px;
+    color: #E83F57;
+    font-size: 22px;
+}
+
+.footdiv {
+    position: absolute;
+    bottom: 140px;
+    height: auto;
+    width: 100%;
+}
+
+.foottext {
+    font-size: 24px;
+    color: #4A4A4A;
+    margin-bottom: 32px;
+    width: auto;
+    text-align: center;
+}
+
+.buttondiv {
+    border-radius: 60px;
+    margin: auto;
+    width: 600px;
+    height: 88px;
+    background-color: #E83F57;
+    position: relative;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.disbutton {
+    position: relative;
+    background-color: #9B9B9B;
+}
+
+.re {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 216px;
+}
+
+.rebackground {
+    /*position: relative;*/
+    padding: 38px 20px;
+    background-color: #747474;
+    margin: auto 214px;
+    border-radius: 26px;
+    opacity: 0.7364;
+}
+
+.reright {
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    bottom: 24px;
+}
+
+.reerror {
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    bottom: 24px;
+}
+
+.icon-succeed.iconfont {
+    /*这样的方式权重很大，优先实现*/
+    text-align: center;
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.icon-fail.iconfont {
+    /*这样的方式权重很大，优先实现*/
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 85px;
+    font-weight: bold;
+}

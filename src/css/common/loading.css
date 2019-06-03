@@ -1,0 +1,15 @@
+.loading-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loading {
+    width: 100%;
+    text-align: center;
+}
+.loading img{
+    display: inline-block;
+    width: 80px;
+}

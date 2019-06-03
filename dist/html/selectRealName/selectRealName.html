@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认证方式</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/selectRealName/selectRealName-562f014e00.css">
+    <link rel="stylesheet" href="../../css/common/index-ea101ea8e8.css">
+</head>
+<body>
+<div class="box">
+    <div class="titletext">根据国家最新规定，寄收快递须实名登记，请选择以下任意一种实名认证</div>
+    <div class="real-name-write-wrap">
+        <div class="real-name-write">
+            <div>
+                <img src="../../images/photoIdCard.png" alt="" class="up-images-icon">
+                <input type="file" id="idCard" accept="image/*" multiple capture="camera">
+            </div>
+            <p class="text">请拍身份证正面</p>
+        </div>
+    </div>
+    <div class="real-name-write-wrap">
+
+        <div class="real-name-ocr" id="jumpRealName">
+            <div>
+                <img src="../../images/realname.png" alt="">
+            </div>
+            <p class="text">请填写实名信息</p>
+        </div>
+    </div>
+    <div class="schedule" style="display: none">
+        <div class="cover"></div>
+        <div class="loading_father_wrap">
+
+            <div class="loading_father">
+                <div class="loading"></div>
+                <span><label class="bfb">0</label>%</span>
+            </div>
+            <div class="loading-text">解析中。。。</div>
+        </div>
+    </div>
+    <!--<div class="rule">-->
+    <!--根据国家最新规定，寄收快递需实名认证-->
+    <!--</div>-->
+
+</div>
+<script src="../../js/common/common.js"></script>
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../lib/layer_mobile/layer.js"></script>
+<script src="../../js/selectRealName/selectRealName.js"></script>
+<script src="../../js/common/api.js"></script>
+<script>
+    mtac()
+</script>
+</body>
+</html>

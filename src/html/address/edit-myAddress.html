@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>编辑地址</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/common/index.css">
+    <link rel="stylesheet" href="../../css/address/add-address.css">
+    <link rel="stylesheet" href="../../lib/LArea/css/LArea.min.css">
+    <link rel="stylesheet" href="../../lib/layer_mobile/need/layer.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="message-input-wrap">
+        <div class="message-input border-1px-bottom">
+            <div class="add-tit">地址类型</div>
+            <div class="adr-type-wrap">
+
+                <label class="radio-tit iconfont icon-radio receiveBtn" for="receiveType">
+                    <span></span>
+                </label>
+                <input type="radio" name="address-type" id="receiveType" value="2" checked="checked">
+                <label for="receiveType" class="radio-cont receiveBtn">收件地址</label>
+            </div>
+            <div class="adr-type-wrap ">
+                <label class="radio-tit iconfont icon-radio sentBtn" for="sentType">
+                    <span></span>
+                </label>
+                <input type="radio" name="address-type" id="sentType" value="1">
+                <label for="sentType" class="radio-cont sentBtn">发件地址</label>
+            </div>
+        </div>
+        <!-- 地址姓名及联系方式 -->
+        <div class="message-input border-1px-bottom">
+            <span class="tit">姓名</span>
+            <input class="message-w" id="addressName" type="text" value="" placeholder="请输入姓名">
+        </div>
+        <div class="message-input border-1px-bottom">
+            <span class="tit">联系方式</span>
+            <input class="message-w" id="addressPhone"  value="" placeholder="请输入手机号" onBlur="lostinput">
+            <input id="uuid" type="hidden">
+        </div>
+        <!-- 收件地址-->
+        <div id="receiveBlock">
+            <div class="message-input border-1px-bottom">
+                <span class="tit">所在区域</span>
+                <span class="message-w input-color" id="addressCity">请选择</span>
+                <input id="value1" type="hidden" value=""/>
+                <input id="valueAddress" type="hidden" value=""/>
+                <input id="locationCoder" type="hidden" value=""/>
+            </div>
+            <div class="message-input border-1px-bottom">
+                <span class="tit">详细地址</span>
+                <input class="message-w" id="addressDetail" type="text" value="" placeholder="请输入详细地址" maxlength="50">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="save-wrap">
+        <button class="save-btn" id="saveBtn">保存</button>
+    </div>
+
+    <div id="container" style="display: none"></div>
+    <div class="loading-wrap" style="display: none">
+        <div class="loading">
+            <img src="../../images/loading.gif" alt="">
+        </div>
+    </div>
+
+</div>
+
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/common/regular.js"></script>
+<script src="../../js/address/edit-myAddress.js"></script>
+<script src="../../js/common/api.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.5&key=37eaff691d69c336f8fc72d7f8eb73df"></script>
+<script src="../../lib/LArea/js/LArea.js"></script>
+<script src="../../lib/LArea/js/areajson.js"></script>
+<script src="../../lib/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+    mtac()
+</script>
+</body>
+</html>

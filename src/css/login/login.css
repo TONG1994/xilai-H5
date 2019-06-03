@@ -1,0 +1,178 @@
+body, html {
+    height: 100%;
+}
+
+header .title {
+    color: #fff;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.phoneNub {
+    position: relative;
+    margin-bottom: 76px;
+    width: 100%;
+}
+
+.phoneNub .phone-ipt {
+    margin: 0 auto;
+    width: 594px;
+}
+
+.phone-ipt.border-1px-bottom:after {
+    background: #E83F57;
+}
+
+.phoneNub input {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    background: none;
+    border: none;
+    font-size: 32px;
+    line-height: 1.5em;
+    color: #000;
+}
+
+.phoneNub input::-webkit-input-placeholder {
+    color: #A6A6A6;
+}
+
+.clearbtn {
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.clearbtn.icon-qingkong {
+    font-size: 32px;
+}
+
+.login-title {
+    padding: 66px 0 76px 74px;
+}
+
+.login-title p {
+    font-size: 74px;
+    color: #000;
+    font-weight: 500;
+}
+
+.next-btn {
+    width: 100%;
+}
+
+.next-btn button {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 88px;
+    line-height: 88px;
+    border: none;
+    border-radius: 60px;
+    background-color: #B7B7B7;
+    font-size: 32px;
+    color: #fff;
+}
+
+.next-btn button.active {
+    background-color: #E83F57;
+}
+
+/*发送验证码*/
+#countdown {
+    color: #000;
+    margin-bottom: 76px;
+}
+
+.phone-show {
+    margin: 0 auto 44px auto;
+    width: 594px;
+    font-size: 32px;
+}
+
+.phone-wrap {
+    position: relative;
+}
+
+.verification-wrap {
+    position: relative;
+    width: 594px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.verification-input::-webkit-input-placeholder {
+    color: #A2A2A2;
+    font-size: 32px;
+}
+
+.verification-input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #000;
+}
+
+.countdown-num {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #B3B3B3;
+}
+
+.countdown-num.active {
+    color: #000;
+}
+
+.terms-text {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.6;
+    font-size: 24px;
+    color: #969696;
+    text-align: center;
+}
+
+.terms-text a {
+    color: #E83F57;
+}
+
+.xl-register {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.xl-register button.active{
+    background-color: #E83F57;
+}
+.xl-register button {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 88px;
+    line-height: 88px;
+    border: none;
+    border-radius: 60px;
+    background-color: #B7B7B7;
+    font-size: 32px;
+    color: #fff;
+}
+
+.verification-wrap.border-1px-bottom:after {
+    background: #E83F57;
+}

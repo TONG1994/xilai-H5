@@ -1,0 +1,331 @@
+body {
+    background: #F2F2F2;
+}
+
+.ordertitle {
+    height: 132px;
+    line-height: 132px;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    display: flex;
+    background-image: url("../../../images/order-bc.png");
+    font-size: 30px;
+    color: #fff;
+}
+
+.orderDetail {
+    background: #ffffff;
+    margin-bottom:30px;
+}
+
+.orderDetail ul {
+    padding: 28px 34px 26px 34px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.orderDetail li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.orderDetail li:first-child {
+    padding: 0 0 34px 0;
+}
+
+.orderDetail li .sendtitle {
+    color: #F90D0D;
+    font-size: 32px;
+}
+
+.orderDetail li .gettitle {
+    color: #0B7BFF;
+    font-size: 32px;
+}
+.orderDetail li .gettitle img,.orderDetail li .sendtitle img{
+    display: block;
+    width: 52px;
+}
+.orderDetail li .dashline {
+    margin: 0 14px;
+    width: 1px;
+    height: 88px;
+}
+
+.orderDetail li .messages .mess {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    color: #121212;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+}
+
+.orderDetail li .messages p {
+    color: #898989;
+    font-size: 28px;
+    width: 600px;
+    line-height: 40px;
+}
+.orderDetailText-wrap{
+    background-color: #fff;
+}
+.orderDetailText-wrap li{
+    color: #989898;
+    padding: 5px 0;
+}
+.orderDetailText-wrap>div{
+    padding: 0 34px;
+}
+.orderDetailText-wrap>div ul{
+    padding: 20px 0;
+}
+.orderDetailText-wrap>div ul.border-1px-bottom:after{
+    background-color: #F1F1F1;
+}
+.orderDetailText-wrap .button {
+    display: inline-block;
+    position: relative;
+    margin:20px 0;
+    font-size: 24px;
+    color: #323232;
+    border-radius: 100px;
+    width: 180px;
+    height: 60px;
+    border: 2px solid #323232;
+    text-align: center;
+    line-height: 58px;
+}
+
+.deleteorder {
+    border: 2px solid #E6E6E6;
+    position: absolute;
+    top: 350px;
+    margin: auto 185px;
+    width: 380px;
+    height: 228px;
+    background-color: #FFFFFF;
+    border-radius: 26px;
+}
+.ifdelete{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 55px;
+    font-size: 30px;
+    color: #121212;
+    margin: auto 75px;
+}
+.borderdvertical {
+    position: absolute;
+    top: 150px;
+    height: 68px;
+    width: 2px;
+    border: 1px solid #E6E6E6;
+    margin: auto 190px;
+}
+
+.borderdhorizontal {
+    position: absolute;
+    top: 140px;
+    height: 2px;
+    width: 100%;
+    border: 1px solid #E6E6E6;
+}
+.buttoncheck{
+    position: absolute;
+    top: 145px;
+    left: 0px;
+    width: 185px;
+    height: 78px;
+}
+.buttoncancel{
+    position: absolute;
+    top: 145px;
+    right: 0px;
+    width: 185px;
+    height: 78px;
+}
+.textcheck{
+    width: 100px;
+    position: absolute;
+    font-size: 32px;
+    color: #121212;
+    margin: 15px auto auto 60px;
+}
+.textcancel{
+    width: 100px;
+    position: absolute;
+    font-size: 32px;
+    color: #121212;
+    margin: 15px auto auto 60px;
+}
+.orderDetail .border-1px-bottom:after{
+    background-color: #F1F1F1;
+}
+.orderDetailText{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.quBtn{
+    padding: 0 30px!important;
+    text-align: right;
+}
+.orderDetailText .orderText{
+    letter-spacing:0.1em;
+}
+
+.courier-wrap{
+    padding: 26px 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.courier-wrap .courier-icon{
+    width: 100px;
+    height: 100px;
+    margin-right: 36px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.courier-wrap .courier-icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.courier-wrap .courier-detail{
+    flex:1;
+}
+.courier-wrap .courier-phone{
+    width: 58px;
+}
+.courier-wrap .courier-phone img{
+    display: block;
+    width: 100%;
+}
+#courierName{
+    font-size: 34px;
+    margin-right: 10px;
+}
+#courierServe{
+    font-size: 24px;
+}
+#courierAddress{
+    color: #A6A6A6;
+    font-size: 24px;
+}
+.courier-phone a{
+    display: block;
+}
+/*弹出层*/
+.popup-wrap {
+    position: relative;
+    z-index: 19911109;
+}
+
+.popup-cover {
+    background-color: rgba(0, 0, 0, .7);
+    pointer-events: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-main {
+    display: table;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, arial, sans-serif;
+    pointer-events: none;
+}
+
+.popup-section {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.popup-section .popup-child {
+    position: fixed;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: 0 0;
+}
+
+.popup-child {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    pointer-events: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+
+.popup-m-cont {
+    padding: 40px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(255, 255, 255, 1);
+    line-height: 44px;
+    text-align: center;
+}
+
+.popup-btn {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0;
+    border-top: 1px solid #D0D0D0;
+    background-color: #F2F2F2;
+}
+
+.popup-child .popup-btn {
+    display: block;
+    height: auto;
+    background: 0 0;
+    border-top: none;
+}
+
+.popup-child .popup-btn span {
+    display: block;
+    flex: 1;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid #c2c2c2;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.popup-cancel {
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-end {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+}
+.marB-20{
+    margin-bottom: 20px;
+}

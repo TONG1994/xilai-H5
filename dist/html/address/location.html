@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>定位</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../css/common/index-ea101ea8e8.css">
+    <link rel="stylesheet" href="../../css/address/location-a0883af08c.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="heard-wrap">
+        <div class="heard">
+            <div class="city-text" id="cityText">
+                <span id="cityName"></span>
+                <input type="hidden" id="cityCode">
+                <img src="../../images/down.png" alt="">
+            </div>
+            <div class="city-input">
+                <input type="text" placeholder="输入地址" id="searchAddress">
+
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <ul id="addressList">
+
+        </ul>
+    </div>
+    <div class="loading-wrap" style="display: none">
+        <div class="loading">
+            <img src="../../images/loading.gif" alt="">
+        </div>
+    </div>
+    <div id="container" style="display: none"></div>
+</div>
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/common/regular.js"></script>
+<script src="../../js/address/location.js"></script>
+<script src="../../js/common/api.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.9&key=5b40646ffcb1a03049731980f2a3a25e&plugin=AMap.CitySearch"></script>
+<script src="../../lib/layer_mobile/layer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    background-color: #fff;
+}
+
+footer .foot-btn {
+    width: 50%;
+    height: 108px;
+    padding-top: 12px;
+}
+
+footer .iconfont {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 44px;
+    height: 42px;
+    font-size: 42px;
+    text-align: center;
+    color: #121212;
+}
+.foot-btn.active .iconfont, .foot-btn.active p{
+    color: #F90D0D;
+}
+footer p {
+    text-align: center;
+    font-size: 24px;
+    color: #121212;
+}
+
+.border-1px-top:after{
+    background: #E6E6E6;
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    outline: none;
+}
+
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    word-wrap: break-word;
+    background: #fff;
+    font-family:Helvetica;
+}
+
+a, u, s, del {
+    color: #666;
+    text-decoration: none;
+}
+
+fieldset, a img, .bor0 {
+    border: 0;
+}
+
+i, em, b {
+    font-style: normal;
+    font-weight: 100;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea {
+    outline: none;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input, textarea {
+    -webkit-user-select: auto;
+}
+
+.border-1px-bottom {
+    position: relative;
+}
+
+.border-1px-bottom:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.border-1px-top:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-1px-bottom:after {
+        -webkit-transform: scaleY(.5);
+        -webkit-transform-origin: 50% 0;
+    }
+
+    .border-1px-top:after {
+        -webkit-transform: scaleY(.5);
+        -webkit-transform-origin: 50% 0;
+    }
+}

@@ -1,0 +1,50 @@
+html{
+    background: linear-gradient(to bottom, #738DF6, #644CE8);
+    min-height: 100%;
+}
+body{
+    background: none;
+}
+.download-wrap{
+    padding-top: 90px;
+    padding-bottom: 20px;
+
+}
+.xl-heard{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.xl-heard img{
+    display:inline-block;
+    width: 346px;
+}
+.download-count .img{
+    margin-bottom: 180px;
+}
+.download-count .img img{
+    display: block;
+    width: 100%;
+}
+.download-btn{
+    width: 100%;
+    padding: 0 84px;
+}
+.download-btn>div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.download-btn>div.first{
+    margin-bottom: 76px;
+}
+.download-btn>div span{
+    display: block;
+}
+.download-btn>div span.title img{
+     display: block;
+     width: 158px;
+ }
+.download-btn>div span.btn img{
+    display: block;
+    width: 242px;
+}
